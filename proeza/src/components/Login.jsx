@@ -15,6 +15,66 @@ const FEATURES = [
   ["bell", "Alertas oportunas", "Recibe avisos antes de cada vencimiento."],
 ];
 
+import { Link } from "react-router-dom";
+// import AuthLayout from "./AuthLayout";
+
+// export default function ForgotPassword() {
+//   const [email, setEmail] = useState("");
+
+//   return (
+//     <AuthLayout>
+//       <form
+//         onSubmit={(e) => e.preventDefault() /* aquí va la llamada al backend */}
+//       >
+//         <Link to="/" className="back">
+//           <i className="bi bi-chevron-left" /> Volver a iniciar sesión
+//         </Link>
+//         <span className="login-ico warm">
+//           <i className="bi bi-envelope" />
+//         </span>
+//         <small className="portal">RECUPERAR ACCESO</small>
+//         <h2>¿Olvidaste tu contraseña?</h2>
+//         <p className="muted">
+//           Ingresa tu correo corporativo y te enviaremos las instrucciones para
+//           crear una nueva contraseña.
+//         </p>
+//         <label className="lbl mt-4">
+//           Correo corporativo <b className="text-danger">*</b>
+//         </label>
+//         <div className="inp-ico plain">
+//           <i className="bi bi-envelope" />
+//           <input
+//             className="form-control"
+//             type="email"
+//             required
+//             placeholder="nombre@proeza.com"
+//             value={email}
+//             onChange={(e) => setEmail(e.target.value)}
+//           />
+//         </div>
+//         <div className="info-box">
+//           <span>
+//             <i className="bi bi-check-lg" />
+//           </span>
+//           <div>
+//             <b>Enlace de uso único</b>
+//             <small>
+//               Por seguridad, el enlace tendrá una vigencia de 30 minutos.
+//             </small>
+//           </div>
+//         </div>
+//         <button className="btn-p w-100 py-3">
+//           Enviar <i className="bi bi-chevron-right ms-3" />
+//         </button>
+//         <small className="safe">
+//           <i className="bi bi-check-lg" /> Nunca te solicitaremos tu contraseña
+//           por correo electrónico.
+//         </small>
+//       </form>
+//     </AuthLayout>
+//   );
+// }
+
 export default function Login() {
   const nav = useNavigate();
   const [email, setEmail] = useState("andrea.guzman@proeza.com");
